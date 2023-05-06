@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moveable Cube</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Digital Library</h1>
+    </div>
+    <div class="popup-form" style="display: none">
+      <form action="">
+        <div class="form-title">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title">
+        </div>
+        <div class="form-author">
+          <label for="author">Author</label>
+          <input type="text" name="author" id="author">
+        </div>
+        <div class="form-pages">
+          <label for="pages">Pages</label>
+          <input type="number" name="pages" id="pages">
+        </div>
+        <div class="read">
+          <label for="read">Have you read this book?</label>
+          <input type="checkbox" id="read" name="read" value="yes">
+        </div>
+        <button class="add-btn" type="submit" form="form" id="addBtn">Add</button>
+      </form>
+    </div>
+    <div class="library-container">
+      <button class="new-book-btn">Add New Book</button>
+      <div class="book-card-container">
+
+      </div>
+    </div>
+  </body>
+</html>

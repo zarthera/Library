@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+html{
+    height: 100%;
+}
+body{
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    margin: 0;
+    padding: 0;
+    min-height: 99.8%;
+    border: 1px solid black;
+}
+
+.header{
+    background: #393646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #6D5D6E;
+}
+h1{
+    color: rgb(218, 213, 213);
+    font-family: "Lato", sans-serif;
+    
+}
+
+.library-container{
+    text-align: center;
+
+}
+.new-book-btn{
+    margin: 15px;
+    height: 50px;
+    width: 200px;
+    font-size: 22px;  
+    font-family: "Lato", sans-serif;
+    background: #4F4557; 
+    color: rgb(218, 213, 213);
+    border: 2px solid black;
+    border-radius: 16px;
+}
+.new-book-btn:hover{
+    cursor: pointer;
+}
+.new-book-btn:active{
+    transform: scale(.95);
+    transition: ease 0.07s all;
+}
+.new-book-btn:not(:active){
+    transform: scale(1);
+    transition: ease 0.07s all;
+}
+.popup-form{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 500px;
+    width: 500px;
+    margin-top: -200px; /* Negative half of height. */
+    margin-left: -250px;
+    background-color: #393646;
+
+    border: 2px solid black;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+.form-title{
+    font-family: "Lato";
+    font-size: 22px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.form-author{
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato";
+    color: white;
+    font-size: 22px;
+}
+.form-pages{
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato";
+    color: white;
+    font-size: 22px;
+}
+.read{
+    font-family: "Lato";
+    color: white;
+    font-size: 22px;
+}
+input{
+    height: 16px;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-left: 6px;
+    font-size: 16px;
+    height: 20px;
+}
+form > button{
+    font-family: "Lato";
+    font-size: 22px;
+    height: 45px;
+    background-color: #4F4557;
+    color: white;
+    border: 2px solid black;
+}
+form > button:hover{
+    cursor: pointer;
+}
+form > button:active{
+    transform: scale(.95);
+    transition: ease 0.07s all;
+}
+form > button:not(:active){
+    transform: scale(1);
+    transition: ease 0.07s all;
+}
