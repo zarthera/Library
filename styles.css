@@ -65,12 +65,15 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    scale: 0
     
 }
 form{
     display: flex;
     flex-direction: column;
-    gap: 16px
+    gap: 16px;
+
 }
 .form-title{
     font-family: "Lato";
@@ -106,7 +109,7 @@ input{
     font-size: 16px;
     height: 20px;
 }
-form > button{
+.add-btn{
     font-family: "Lato";
     font-size: 22px;
     height: 45px;
@@ -114,14 +117,30 @@ form > button{
     color: white;
     border: 2px solid black;
 }
-form > button:hover{
+.add-btn:hover{
     cursor: pointer;
 }
-form > button:active{
+.add-btn:active{
     transform: scale(.95);
     transition: ease 0.07s all;
 }
-form > button:not(:active){
+.add-btn:not(:active){
     transform: scale(1);
     transition: ease 0.07s all;
+}
+.close-form-btn{
+    background-color: inherit;
+    width: 30px;
+    border: none;
+    position: relative;
+    left: 350px;
+    bottom: 215px;
+}
+.close-form-btn:hover{
+    cursor: pointer;
+    
+}
+.close-form-btn > img{
+    width: 20px;
+    height: 20px;
 }
