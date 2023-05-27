@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 html{
     height: 100%;
+    width: 100%
 }
 body{
     display: grid;
@@ -12,20 +13,21 @@ body{
 }
 
 .header{
-    background: #393646;
+    background: #27374D;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid #6D5D6E;
 }
 h1{
-    color: rgb(218, 213, 213);
+    color: #faebeb;
     font-family: "Lato", sans-serif;
     
 }
 
 .library-container{
     text-align: center;
+    background-color: #9DB2BF;
 
 }
 .new-book-btn{
@@ -34,8 +36,8 @@ h1{
     width: 200px;
     font-size: 22px;  
     font-family: "Lato", sans-serif;
-    background: #4F4557; 
-    color: rgb(218, 213, 213);
+    background: #27374D; 
+    color: #faebeb;
     border: 2px solid black;
     border-radius: 16px;
 }
@@ -58,7 +60,7 @@ h1{
     width: 500px;
     margin-top: -200px; /* Negative half of height. */
     margin-left: -250px;
-    background-color: #393646;
+    background-color: #27374D;
 
     border: 2px solid black;
     border-radius: 16px;
@@ -66,8 +68,8 @@ h1{
     justify-content: center;
     align-items: center;
 
-    scale: 0
-    
+    scale: 0;
+    z-index: 1;
 }
 form{
     display: flex;
@@ -101,6 +103,7 @@ form{
     color: white;
     font-size: 22px;
 }
+
 input{
     height: 16px;
     border-radius: 6px;
@@ -113,7 +116,7 @@ input{
     font-family: "Lato";
     font-size: 22px;
     height: 45px;
-    background-color: #4F4557;
+    background-color: #526D82;
     color: white;
     border: 2px solid black;
 }
@@ -121,7 +124,7 @@ input{
     cursor: pointer;
 }
 .add-btn:active{
-    transform: scale(.95);
+    transform: scale(.90);
     transition: ease 0.07s all;
 }
 .add-btn:not(:active){
@@ -143,4 +146,52 @@ input{
 .close-form-btn > img{
     width: 20px;
     height: 20px;
+}
+
+.library{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+}
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    color: #f3eaea;
+    background-color: #27374D;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: "Lato";
+    font-size: 25px;
+}
+.read:hover{
+    cursor: pointer;
+}
+.remove-btn{
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    background-color: #526D82;
+    color: whitesmoke
+    
+}
+
+.remove-btn:hover{
+    cursor: pointer;
+}
+.remove-btn:active{
+    transform: scale(.90);
+    transition: ease 0.07s all;
+}
+.remove-btn:not(:active){
+    transform: scale(1);
+    transition: ease 0.07s all;
 }
